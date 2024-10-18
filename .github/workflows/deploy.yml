@@ -1,0 +1,35 @@
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout ✨
+        uses: actions/checkout@v3      
+      - name: Install dependencies ✨
+        run: npm install
+      - name: Build website ✨
+        run: npm run build
+        env: 
+          NODE_ENV: production
+      - name: Publish to Cloudflare Pages ✨
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: opalo-website
+          directory: ./build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+      # - name: Sycing Article to dev.to
+      #   uses: kanekotic/TheActionDev@main
+      #   timeout-minutes: 10
+      #   continue-on-error: true
+      #   with:
+      #     api-key: ${{ secrets.DEVTO_TOKEN }}
+      #     directory: ./blog
+      #     ignore: 201**.md
