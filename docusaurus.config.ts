@@ -82,6 +82,8 @@ const config: Config = {
         //  type: 'localeDropdown',
         //  position: 'right',
         //},
+
+        {href: 'https://github.com/opalocc/opalo-app', label: 'Github', position: 'right'},
       ],
     },
     footer: {
