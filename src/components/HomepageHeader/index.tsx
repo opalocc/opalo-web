@@ -33,6 +33,12 @@ const HeaderView: React.FC = () => {
           />
         <Spacer height={20} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
+        <Spacer height={50} />
+        <div className={styles.ButtonContainer}>
+          <a className={"button button--primary"} href="#tally-open=n0jV1Q&tally-layout=modal&tally-width=300&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0&level=free">
+          <Translate id='site.homepageHeader.cta'>Join Beta</Translate>
+          </a>
+        </div>
       </div>
       <img src={OpaloImage} className={styles.OpaloImage}/>
     </div>

@@ -82,7 +82,11 @@ const config: Config = {
         //  type: 'localeDropdown',
         //  position: 'right',
         //},
-
+        {
+          to: '#tally-open=n0jV1Q&tally-layout=modal&tally-width=300&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0&level=free',
+          label: 'Join Beta',
+          position: 'right',
+        },
         {href: 'https://github.com/opalocc/opalo-app', label: 'Github', position: 'right'},
       ],
     },
