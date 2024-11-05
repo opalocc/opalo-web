@@ -1,8 +1,7 @@
 backend:
   name: github
-  repo: opalocc/website
+  repo: opalocc/opalo-web
   branch: main
-  base_url: https://sun-hospitable-jasper.glitch.me
 media_folder: "static/img/blog"
 public_folder: "https://raw.githubusercontent.com/opalocc/website/main/static/img/blog"
 collections:
