@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: opalocc/opalo-web
+  repo: opalocc/website
   branch: main
+  base_url: https://stripe-productive-freighter.glitch.me
 media_folder: "static/img/blog"
 public_folder: "https://raw.githubusercontent.com/opalocc/website/main/static/img/blog"
 collections:
