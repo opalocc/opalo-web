@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: opalocc/website
+  repo: opalocc/opalo-web
   branch: main
   base_url: https://stripe-productive-freighter.glitch.me
 media_folder: "static/img/blog"
-public_folder: "https://raw.githubusercontent.com/opalocc/website/main/static/img/blog"
+public_folder: "https://raw.githubusercontent.com/opalocc/opalo-web/main/static/img/blog"
 collections:
   - name: "blog-scheduler" # Used in routes, e.g., /admin/collections/blog
     label: "Blog Scheduler" # Used in the UI
